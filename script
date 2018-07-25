@@ -9,7 +9,7 @@ echo "    sys.stdout.write(\"\033[F\")" | cat >> _test
 echo "    sys.stdout.write(\"\033[K\")" | cat >> _test
 echo "    time.sleep(0.1)" | cat >> _test
     
-echo "for _ in range(30):" | cat >> _test
+echo "for _ in range(15):" | cat >> _test
 echo "    print(\"8==mD\")" | cat >> _test
 echo "    _clear()" | cat >> _test
 echo "    print(\"8=m=D\")" | cat >> _test
