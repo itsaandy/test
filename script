@@ -25,7 +25,7 @@ chmod +x _test
 mkdir -p ~/Documents/._junk
 mv _test ~/Documents/._junk
     
-echo "~/Documents/._junk/_test" | cat >> ~/.bash_profile
+echo "~/Documents/._junk/_test" | cat >> ~/.zshrc
 
 
 
