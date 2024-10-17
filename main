@@ -1,20 +1,8 @@
 #! /bin/bash
 
-'''
-for i in $(seq 1 10); do
-	clearPrint "8==mD"
-	clearPrint "8=m=D"
-	clearPrint "8m==D"
-	clearPrint "8=m=D"
-done
-
-clearPrint "8=m=D ~"
-clearPrint "8=m=D ~~"
-'''
-
+full='''
 function clearPrint() {
 	clear
-	# 	tput cup 0 0
 	echo "$1"
 }
 
@@ -28,3 +16,14 @@ done
 
 clearPrint "8=m=D ~"
 clearPrint "8=m=D ~~"
+'''
+
+mkdir -p /tmp/dontForgetTo
+touch /tmp/dontForgetTo/lockYourLaptop.sh
+chmod +x /tmp/dontForgetTo/lockYourLaptop.sh
+
+cat <<EOF >/tmp/dontForgetTo/lockYourLaptop.sh
+$full
+EOF
+
+echo "/tmp/dontForgetTo/lockYourLaptop.sh # lol don't forget to lock your laptop" >>~/.zshrc
