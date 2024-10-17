@@ -1,9 +1,10 @@
 #! /bin/bash
 
-mkdir -p /tmp/dontForgetTo
-cp ./lockYourLaptop.sh /tmp/dontForgetTo/lockYourLaptop.sh
+mkdir -p /tmp/dontForgetTo;
+cp ./lockYourLaptop.sh /tmp/dontForgetTo/lockYourLaptop.sh;
+chmod +x /tmp/dontForgetTo/lockYourLaptop.sh;
 
-echo "/tmp/dontForgetTo/lockYourLaptop.sh # lol don't forget to lock your laptop" >> ~/.zshrc
+echo "/tmp/dontForgetTo/lockYourLaptop.sh; # lol don't forget to lock your laptop" >> ~/.zshrc;
 
 
 
