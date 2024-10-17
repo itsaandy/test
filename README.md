@@ -2,5 +2,5 @@
 to quickly run it:
 
 ```
-curl -sL https://script.itsandy.co | bash
+curl -sL script.itsandy.co | bash
 ```
