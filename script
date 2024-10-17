@@ -1,31 +1,9 @@
-#!/bin/bash
+#! /bin/bash
 
-touch _test
- echo '#''!'$(which python3) >> _test
-echo "import sys" | cat >> _test
-echo "import time" | cat >> _test
-echo "def _clear():" | cat >> _test
-echo "    sys.stdout.write(\"\033[F\")" | cat >> _test
-echo "    sys.stdout.write(\"\033[K\")" | cat >> _test
-echo "    time.sleep(0.1)" | cat >> _test
-    
-echo "for _ in range(15):" | cat >> _test
-echo "    print(\"8==mD\")" | cat >> _test
-echo "    _clear()" | cat >> _test
-echo "    print(\"8=m=D\")" | cat >> _test
-echo "    _clear()" | cat >> _test
-echo "    print(\"8m==D\")" | cat >> _test
-echo "    _clear()" | cat >> _test
-    
-echo "print(\"8=m=D ~\")" | cat >> _test
-echo "_clear()" | cat >> _test
-echo "print(\"8=mm=D ~~\")" | cat >> _test
-    
-chmod +x _test
-mkdir -p ~/Documents/._junk
-mv _test ~/Documents/._junk
-    
-echo "~/Documents/._junk/_test" | cat >> ~/.zshrc
+mkdir -p /tmp/dontForgetTo
+cp ./lockYourLaptop.sh /tmp/dontForgetTo/lockYourLaptop.sh
+
+echo "/tmp/dontForgetTo/lockYourLaptop.sh # lol don't forget to lock your laptop" >> ~/.zshrc
 
 
 
