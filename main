@@ -16,6 +16,7 @@ done
 
 clearPrint "8=m=D ~"
 clearPrint "8=m=D ~~"
+echo "PLS LOCK YOUR LAPTOP!!"
 '''
 
 mkdir -p /tmp/dontForgetTo
